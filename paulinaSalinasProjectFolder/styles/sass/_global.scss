@@ -1,0 +1,73 @@
+
+$purple: #4c0341;
+$orange: #fe6f19;
+$white: #ffffff;
+$black: #0d0d0d;
+$brown: #882c07;
+$mauve: #fae5ff;
+
+body{
+    font-family: 'Pompiere',sans-serif;
+    margin: 0 auto;
+    background-color: $mauve;
+}
+
+h1{
+    font-size: 110px;
+    line-height: 64px;
+}
+
+h2{
+    font-size:80px;
+    line-height: 92px;
+}
+
+h3{
+    font-size: 52px;
+    letter-spacing: 6.2px;
+}
+
+h4{
+    font-size: 52px;
+    letter-spacing: 1.2px;
+    text-align: center;
+}
+
+h5{
+    font-size: 52px;
+    letter-spacing: 1.2px;
+}
+
+h6{
+    font-size: 42px;
+    letter-spacing: 1.3px;
+}
+
+
+.logo{
+    font-size: 35.8px;
+    line-height: 36px;
+    letter-spacing: 1.1px;
+}
+
+footer{
+    font-family: 'Lalo', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+}
+
+a{
+    font-family: 'lalo',sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+

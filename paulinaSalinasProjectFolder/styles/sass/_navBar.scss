@@ -1,0 +1,16 @@
+nav{
+    font-family: 'Lato',sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+nav ul{
+    display:flex;
+}
+
+nav ul li{
+    display:inline-block;
+}
