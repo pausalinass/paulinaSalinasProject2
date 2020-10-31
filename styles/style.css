@@ -235,10 +235,15 @@ html {
   overflow: hidden;
 }
 
-body {
-  font-family: 'Pompiere',sans-serif;
+.container {
   margin: 0 auto;
-  background-color: #fae5ff;
+  width: 90%;
+  max-width: 1480px;
+}
+
+body {
+  font-family: "Pompiere", sans-serif;
+  margin: 0 auto;
 }
 
 h1 {
@@ -272,32 +277,59 @@ h6 {
   letter-spacing: 1.3px;
 }
 
-.logo {
-  font-size: 35.8px;
-  line-height: 36px;
-  letter-spacing: 1.1px;
-}
-
 footer {
-  font-family: 'Lalo', sans-serif;
+  font-family: "Lalo", sans-serif;
   font-size: 20px;
   line-height: 32px;
   text-align: center;
 }
 
 a {
-  font-family: 'lalo',sans-serif;
+  font-family: "Lalo", sans-serif;
   font-size: 20px;
   line-height: 32px;
   text-align: center;
   letter-spacing: 1px;
   text-decoration: none;
+  padding: 10px;
+  text-transform: capitalize;
 }
 
 img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+footer p {
+  color: #ffffff;
+  background-color: #882c07;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+}
+
+.homeBackground {
+  background-image: url(../shoeKloset/headerImage.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: #4c0341;
+  width: 40%;
+}
+
+.shoeBox {
+  position: absolute;
+  width: 40%;
+  bottom: 40%;
+  right: -6%;
 }
 
 nav {
@@ -307,14 +339,68 @@ nav {
   line-height: 29px;
   letter-spacing: 1px;
   text-align: center;
-}
-
-nav ul {
+  margin: 0;
+  padding: 10px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+.logo {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  font-family: 'Pompiere';
+  font-size: 35.8px;
+  line-height: 36px;
+  letter-spacing: 1.1px;
+  text-align: start;
+  width: 10%;
+}
+
+nav ul {
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  height: auto;
+  list-style: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
 nav ul li {
-  display: inline-block;
+  height: auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 10px;
+}
+
+nav ul li a {
+  padding: 2px;
+  text-transform: uppercase;
+  color: black;
+}
+
+nav ul li a:hover {
+  background-color: #4c0341;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  background-color: #ffffff;
 }
