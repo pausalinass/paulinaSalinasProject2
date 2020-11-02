@@ -332,6 +332,15 @@ h1 {
   right: -6%;
 }
 
+@media screen and (max-width: 560px) {
+  .contactHead {
+    height: auto;
+  }
+  .contactHead h2 {
+    margin: 0 auto;
+  }
+}
+
 nav {
   font-family: 'Lato',sans-serif;
   font-weight: 700;
@@ -421,6 +430,15 @@ h2 {
   background-color: #ffffff;
 }
 
+@media screen and (max-width: 560px) {
+  .contactHead {
+    height: auto;
+  }
+  .contactHead h2 {
+    margin: 0 auto;
+  }
+}
+
 .contactHead {
   background-image: url(../shoeKloset/contactImage.jpg);
   width: 100%;
@@ -440,7 +458,6 @@ h2 {
     height: auto;
   }
   .contactHead h2 {
-    font-size: 56px;
     margin: 0 auto;
   }
 }

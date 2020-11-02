@@ -8,3 +8,14 @@ h2{
     text-align:center;
     background-color: $white;
 }
+
+@media screen and (max-width:560px){
+    .contactHead {
+        height:auto;
+    }
+
+    .contactHead h2{
+        margin:0 auto;
+    }
+
+}
