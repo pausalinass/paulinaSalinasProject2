@@ -1,0 +1,29 @@
+@import 'palette';
+
+.contactHead{
+    background-image: url(../shoeKloset/contactImage.jpg);
+    width: 100%;
+    height: 80vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.contactHead{
+    h2{
+        background:none;
+        text-transform: uppercase;
+        color:$purple;
+    }
+}
+
+@media screen and (max-width:560px){
+    .contactHead {
+        height:auto;
+    }
+
+    .contactHead h2{
+        font-size: 56px;
+        margin:0 auto;
+    }
+
+}
