@@ -273,7 +273,8 @@ h5 {
 }
 
 h6 {
-  font-size: 42px;
+  text-transform: uppercase;
+  font-size: 30px;
   letter-spacing: 1.3px;
 }
 
@@ -577,7 +578,7 @@ button {
 .blogHeader {
   background-image: url(..//shoeKloset/blogHeader.jpg);
   width: 100%;
-  height: 90vh;
+  height: 70vh;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -586,3 +587,57 @@ button {
   background: none;
   text-transform: uppercase;
 }
+
+.sideBar {
+  float: left;
+  width: 25%;
+  position: relative;
+}
+
+.sideBarWeather {
+  background-color: #ffffff;
+  width: 70%;
+  margin: 50px auto;
+  padding: 10px;
+  position: relative;
+}
+
+.sideBarWeather h6 {
+  margin: 30px 0 10px;
+  color: #4c0341;
+}
+
+.sideBarWeather p {
+  padding: 0 0 20px;
+}
+
+.sideBarWeather ul {
+  padding-left: 16px;
+}
+
+.sideBarWeather ul li {
+  letter-spacing: 1.3px;
+  line-height: 1.5;
+}
+
+.sideBarImg {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+
+.blogPost {
+  /* position:relative; */
+  float: left;
+  width: 75%;
+}
+
+/*
+.boxHeader{
+    position:absolute;
+    top: 275px;
+    right:0;
+    width: 45%;
+    box-shadow: -26px 20px 0 0 $orange;
+}
+*/
