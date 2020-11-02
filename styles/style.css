@@ -421,10 +421,6 @@ h2 {
   background-color: #ffffff;
 }
 
-h4 {
-  text-transform: uppercase;
-}
-
 .contactHead {
   background-image: url(../shoeKloset/contactImage.jpg);
   width: 100%;
@@ -447,4 +443,17 @@ h4 {
     font-size: 56px;
     margin: 0 auto;
   }
+}
+
+.blogHeader {
+  background-image: url(..//shoeKloset/blogHeader.jpg);
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.blogHeader h2 {
+  background: none;
+  text-transform: uppercase;
 }
