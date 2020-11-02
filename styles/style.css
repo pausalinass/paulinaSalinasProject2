@@ -401,6 +401,18 @@ nav ul li a:hover {
   color: white;
 }
 
+@media screen and (max-width: 600px) {
+  a {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  a {
+    display: none;
+  }
+}
+
 .aboutHome {
   background-color: #fae5ff;
 }
