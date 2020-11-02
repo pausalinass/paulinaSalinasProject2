@@ -459,6 +459,8 @@ main {
 
 .form {
   position: relative;
+  -webkit-box-shadow: 10px 30px #fe6f19;
+          box-shadow: 10px 30px #fe6f19;
 }
 
 .flexContainer {
@@ -475,10 +477,9 @@ main {
   color: #000;
   margin: 2px;
   padding: 3%;
-  /* position: absolute;
-    bottom:-75px;
-    right:50px; */
   background: #ffffff;
+  -webkit-box-shadow: -26px 20px 0px 0px #fe6f19;
+          box-shadow: -26px 20px 0px 0px #fe6f19;
 }
 
 input[type=text] {
@@ -557,13 +558,13 @@ button {
   font-style: normal;
 }
 
-/* Come back to this one */
-@media screen and (max-width: 1130px) {
-  .form {
-    top: 45px;
-  }
+/* Come back to this one 
+@media screen and (max-width:980px){
+    .form{
+        display:block;
+    }
 }
-
+*/
 @media screen and (max-width: 560px) {
   .contactHead {
     height: auto;
