@@ -31,44 +31,37 @@
             </div>
         </div>
     </header>
-    <main>
-        <fieldset>
-            <form action="">
-                <label for="firstName">Name</label>
-                <input type="text" name="firstName" placeholder="Name" id="firstName">
-            
-                <label for="email" placeholder="email">Email address</label>
-                <input type="email" placeholder="Email Address" id=emailAdress>
-                
-                <label for="messages">Mesage</label>
-                <textarea name="messages" id="messages" cols="30" rows="10"placeholder="messages"></textarea>
-            </form>
-        </fieldset>
-    </main>
-    <section>
-        <ul>
-            <li>
-                <i class="fab fa-facebook-f"></i>
-            </li>
-            <li>
-                <i class="fab fa-instagram"></i>
-            </li>
-            <li>
-                <i class="fab fa-twitter"></i>
-            </li>
-            <li>
-                <i class="fab fa-whatsapp"></i>
-            </li>
-        </ul>
-        <div class="flexContainer">
-            <div class="flexItem">
-                <h4>info@email.com</h4>
+    <section class="contactForm">
+        <div class=contactFlex>
+            <div class="form">
+                <form action="">
+                    <label class="srOnly" for="srOnly">Name</label>
+                    <input type="text" name="name" placeholder="Name" id="firstName">
+                    <label for="srOnly" class="srOnly">Email Address</label>
+                    <input type="email" placeholder="Email Address" id=email class="email">
+                    <label class="srOnly" for="srOnly">Message</label>
+                    <textarea name="messages" id="messages" cols="30" rows="10" placeholder="Messages"></textarea>
+                    <button class="button" type="submit"> Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="socialInfo">
+        <div class="icons">
+            <ul>
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-whatsapp"></i></li>
+            </ul>
+        </div>
+        <address class="contactInfo">
+                <a href="mailto:info@email.com">info@email.com</a>
                 <p>123-456-7890</p>
                 <p>123 Queen Street West, Unit 10</p>
                 <p>Toronto, Ontario</p>
                 <p>M5V2D5</p>
-            </div>
-        </div>
+        </address>
     </section>
     <footer>
         <p>Copyright 2020 Juno College and the html is build up!</p>
