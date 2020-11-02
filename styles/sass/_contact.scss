@@ -16,9 +16,19 @@
     }
 }
 
+main{
+    background-color: $mauve;
+}
+
+.form{
+    position:relative;
+}
+
 .flexContainer {
     height: 100px;
-    position: relative;
+    position: absolute;
+    bottom:90px;
+    right:75px;
 }
 
 .flexItem {
@@ -28,9 +38,9 @@
     color: #000;
     margin: 2px;
     padding: 3%;
-    position: absolute;
+    /* position: absolute;
     bottom:-75px;
-    right:50px;
+    right:50px; */
     background: $white;
 }
 
@@ -66,8 +76,55 @@ button{
     text-transform: uppercase;
     color:$white;
     border: none;
-    padding: 2px;
+    padding: 2% 4%;
     width:100%;
+}
+
+.socialInfo{
+    background-color: $mauve;
+    padding: 30px;
+    margin-left:50px;
+}
+
+.icons ul{
+    padding: 0;
+}
+
+.icons ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 10px 20px 10px 0
+}
+
+.icons ul li i{
+    color:$purple;
+}
+
+.contactInfo a{
+    padding: 0;
+    color: $purple;
+    font-family: $font1;
+    font-size:20px;
+    text-align: center;
+    line-height: 32px;
+    letter-spacing: 1px;
+    font-style: normal;
+}
+
+.contactInfo p{
+    font-family: $font1;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-style: normal;
+}
+
+
+/* Come back to this one */ 
+@media screen and (max-width:1130px){
+    .form{
+        top:45px;
+
+    }
 }
 
 @media screen and (max-width:560px){
@@ -80,3 +137,4 @@ button{
     }
 
 }
+
