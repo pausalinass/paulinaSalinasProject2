@@ -69,4 +69,6 @@ footer p{
 }
 
 
-
+@mixin shadow($bottom, $right) {
+        box-shadow: $bottom $right 0px 0px $orange;
+    }
