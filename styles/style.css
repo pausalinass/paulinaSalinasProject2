@@ -575,6 +575,14 @@ button {
   }
 }
 
+main {
+  padding: 10px;
+}
+
+author, time {
+  font-weight: bold;
+}
+
 .blogHeader {
   background-image: url(..//shoeKloset/blogHeader.jpg);
   width: 100%;
@@ -588,10 +596,16 @@ button {
   text-transform: uppercase;
 }
 
-main {
-  padding: 10px;
+.boxHeader {
+  width: 100%;
+  position: absolute;
+  top: -190px;
+  right: -10px;
+  -webkit-box-shadow: -26px 20px 0 0 #fe6f19;
+          box-shadow: -26px 20px 0 0 #fe6f19;
 }
 
+/* Side Bar */
 .sideBar {
   float: left;
   width: 40%;
@@ -630,6 +644,7 @@ main {
     left: 10px;
 }
 */
+/* Blog Post */
 .blogPost {
   float: left;
   width: 60%;
@@ -638,22 +653,27 @@ main {
   padding: 22% 3% 5%;
 }
 
-.boxHeader {
-  width: 100%;
-  position: absolute;
-  top: -190px;
-  right: -10px;
-  -webkit-box-shadow: -26px 20px 0 0 #fe6f19;
-          box-shadow: -26px 20px 0 0 #fe6f19;
-}
-
 .blogPost h5 {
   text-transform: uppercase;
   margin-bottom: 5px;
   color: #4c0341;
 }
 
-.blogPost author,
-.blogPost time {
-  font-weight: bold;
+/* Comments */
+.comments {
+  width: 100%;
+  display: float;
+  float: left;
+}
+
+.comments h4 {
+  text-transform: uppercase;
+  color: #4c0341;
+  margin: 2%;
+}
+
+.comments img {
+  width: 5%;
+  height: auto;
+  float: left;
 }

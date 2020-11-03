@@ -1,5 +1,13 @@
 @import 'palette';
 
+main{
+    padding:10px;
+}
+
+author, time{
+    font-weight: bold;
+}
+
 .blogHeader {
     background-image: url(..//shoeKloset/blogHeader.jpg);
     width: 100%;
@@ -13,9 +21,15 @@
     text-transform: uppercase;
 }
 
-main{
-    padding:10px;
+.boxHeader{
+    width: 100%;
+    position:absolute;
+    top: -190px;
+    right:-10px;
+    box-shadow: -26px 20px 0 0 $orange;
 }
+
+/* Side Bar */
 .sideBar{
     float:left;
     width:40%;
@@ -53,6 +67,8 @@ padding: 10px 40px;
     left: 10px;
 }
 */
+
+/* Blog Post */
 .blogPost{
     float:left;
     width: 60%;
@@ -61,21 +77,28 @@ padding: 10px 40px;
     padding: 22% 3% 5%;
 }
 
-.boxHeader{
-    width: 100%;
-    position:absolute;
-    top: -190px;
-    right:-10px;
-    box-shadow: -26px 20px 0 0 $orange;
-}
-
 .blogPost h5{
     text-transform: uppercase;
     margin-bottom: 5px;
     color:$purple;
 }
 
-.blogPost author,
-.blogPost time{
-    font-weight: bold;
+/* Comments */
+.comments{
+    width:100%;
+    display:float;
+    float:left;
 }
+
+.comments h4{
+    text-transform: uppercase;
+    color:$purple;
+    margin: 2%;
+}
+
+.comments img{
+    width:5%;
+    height:auto;
+    float:left;
+}
+
