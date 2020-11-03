@@ -588,9 +588,13 @@ button {
   text-transform: uppercase;
 }
 
+main {
+  padding: 10px;
+}
+
 .sideBar {
   float: left;
-  width: 25%;
+  width: 40%;
   position: relative;
 }
 
@@ -598,8 +602,7 @@ button {
   background-color: #ffffff;
   width: 70%;
   margin: 50px auto;
-  padding: 10px;
-  position: relative;
+  padding: 10px 40px;
 }
 
 .sideBarWeather h6 {
@@ -620,24 +623,37 @@ button {
   line-height: 1.5;
 }
 
-.sideBarImg {
-  position: absolute;
-  top: 30px;
-  left: 10px;
-}
-
-.blogPost {
-  /* position:relative; */
-  float: left;
-  width: 75%;
-}
-
-/*
-.boxHeader{
-    position:absolute;
-    top: 275px;
-    right:0;
-    width: 45%;
-    box-shadow: -26px 20px 0 0 $orange;
+/* 
+.sideBarImg{
+    position: absolute;
+    top:30px;
+    left: 10px;
 }
 */
+.blogPost {
+  float: left;
+  width: 60%;
+  position: relative;
+  background-color: #ffffff;
+  padding: 22% 3% 5%;
+}
+
+.boxHeader {
+  width: 100%;
+  position: absolute;
+  top: -190px;
+  right: -10px;
+  -webkit-box-shadow: -26px 20px 0 0 #fe6f19;
+          box-shadow: -26px 20px 0 0 #fe6f19;
+}
+
+.blogPost h5 {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: #4c0341;
+}
+
+.blogPost author,
+.blogPost time {
+  font-weight: bold;
+}
