@@ -585,10 +585,14 @@ author, time {
 
 .blogHeader {
   background-image: url(..//shoeKloset/blogHeader.jpg);
-  width: 100%;
-  height: 70vh;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.blogHeader.wrapper {
+  max-width: 100%;
+  width: 1480vh;
+  height: 70vh;
 }
 
 .blogHeader h2 {
@@ -597,46 +601,52 @@ author, time {
 }
 
 .boxHeader {
-  width: 100%;
+  width: 60%;
   position: absolute;
-  top: -190px;
+  background-color: white;
   right: -10px;
+}
+
+.boxHeaderText {
+  background-color: #ffffff;
+}
+
+.boxHeaderText img {
   -webkit-box-shadow: -26px 20px 0 0 #fe6f19;
           box-shadow: -26px 20px 0 0 #fe6f19;
 }
 
-/* Side Bar */
-.sideBar {
-  float: left;
-  width: 40%;
-  position: relative;
+/* Side Bar 
+.sideBar{
+    float:left;
+    width:40%;
+    position:relative;
 }
 
-.sideBarWeather {
-  background-color: #ffffff;
-  width: 70%;
-  margin: 50px auto;
-  padding: 10px 40px;
+.sideBarWeather{
+background-color: $white;
+width: 70%;
+margin: 50px auto;
+padding: 10px 40px;
 }
 
-.sideBarWeather h6 {
-  margin: 30px 0 10px;
-  color: #4c0341;
+.sideBarWeather h6{
+    margin:30px 0 10px;
+    color: $purple;
 }
 
-.sideBarWeather p {
-  padding: 0 0 20px;
+.sideBarWeather p{
+    padding:0 0 20px;
 }
 
-.sideBarWeather ul {
-  padding-left: 16px;
+.sideBarWeather ul{
+    padding-left: 16px;
 }
 
-.sideBarWeather ul li {
-  letter-spacing: 1.3px;
-  line-height: 1.5;
+.sideBarWeather ul li{
+    letter-spacing: 1.3px;
+    line-height: 1.5;
 }
-
 /* 
 .sideBarImg{
     position: absolute;
@@ -660,20 +670,3 @@ author, time {
 }
 
 /* Comments */
-.comments {
-  width: 100%;
-  display: float;
-  float: left;
-}
-
-.comments h4 {
-  text-transform: uppercase;
-  color: #4c0341;
-  margin: 2%;
-}
-
-.comments img {
-  width: 5%;
-  height: auto;
-  float: left;
-}
