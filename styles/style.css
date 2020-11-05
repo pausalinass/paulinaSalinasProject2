@@ -1064,6 +1064,15 @@ h2 {
   margin-right: 5%;
 }
 
+@media screen and (max-width: 1060px) {
+  .popularFlex {
+    width: 90%;
+  }
+  .flexContainerHome {
+    width: 50%;
+  }
+}
+
 .flexParent {
   display: -webkit-box;
   display: -ms-flexbox;

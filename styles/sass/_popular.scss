@@ -36,3 +36,16 @@ box-shadow: 20px 22px 0px 0px $orange;
     margin-right: 5%;
 }
 
+// Media Querie
+@media screen and (max-width:1060px){
+
+    .popularFlex{
+        width:90%;
+    }
+
+    .flexContainerHome{
+        width:50%;
+    }
+
+
+}
