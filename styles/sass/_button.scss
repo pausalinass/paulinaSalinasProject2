@@ -20,7 +20,13 @@
 }
 
 .findMoreOut{
+    background-color:white;
+    color:$brown;
+}
 
+.findMoreOut:hover{
+    background-color: $brown;
+    color:$white;
 }
 
 // contact

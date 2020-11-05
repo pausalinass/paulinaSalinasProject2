@@ -1,0 +1,38 @@
+@import 'palette';
+
+.popular{
+    background-color: $white;
+}
+
+.popularFlex{
+    display:flex;
+    justify-content: space-between;
+}
+
+.popularFlexWrapper{
+    max-width: 1480px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.popularImg img{
+margin-top: 40%;
+margin-bottom:20%;
+box-shadow: 20px 22px 0px 0px $orange;
+}
+
+.flexContainerHome{
+    width:60%;
+}
+
+.flexContainerHome h5{
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color:$brown;
+    padding-top:10%;
+}
+
+.flexContainerHome p{
+    margin-right: 5%;
+}
+
