@@ -333,6 +333,130 @@ h1 {
   right: -6%;
 }
 
+.aboutHome {
+  margin: 20px auto;
+}
+
+.aboutHome h4 {
+  text-transform: uppercase;
+  color: #4c0341;
+  padding: 0;
+  margin: 13% 0 0;
+}
+
+.aboutHome p {
+  padding: 10px;
+  text-align: center;
+}
+
+.homeFlexContainer {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.homeFlexContainer img {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tennieShoe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.tennieShoe img {
+  -webkit-box-shadow: 16px 20px 0px 0px #fe6f19;
+          box-shadow: 16px 20px 0px 0px #fe6f19;
+}
+
+.tennieShoe ul {
+  padding: 0 5% 0 20%;
+  list-style: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.tennieShoe ul li h6 {
+  margin-bottom: 0;
+}
+
+.tennieShoe ul li a {
+  color: #882c07;
+  padding: 10px;
+}
+
+.tennieShoe a:hover {
+  background-color: #882c07;
+  color: white;
+  padding: 10px;
+}
+
+.beigeHome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.beigeHome img {
+  -webkit-box-shadow: -24px 20px 0px 0px #fe6f19;
+          box-shadow: -24px 20px 0px 0px #fe6f19;
+}
+
+.beigeHome ul {
+  list-style: none;
+  padding: 0 20% 0 5%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.beigeHome ul li h6 {
+  margin-bottom: 0;
+}
+
+.beigeHome ul li a {
+  color: #882c07;
+  padding: 10px;
+}
+
+.beigeHome a:hover {
+  background-color: #882c07;
+  color: white;
+  padding: 10px;
+}
+
+.contactHome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactHome h3 {
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 560px) {
   .contactHead {
     height: auto;
@@ -420,44 +544,6 @@ nav ul li a:hover {
   a {
     display: none;
   }
-}
-
-header {
-  background-image: url(../shoeKloset/banner.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-h2 {
-  text-align: center;
-  background-color: #fae5ff;
-  margin-bottom: 0;
-}
-
-@media screen and (max-width: 560px) {
-  .contactHead {
-    height: auto;
-  }
-  .contactHead h2 {
-    margin: 0 auto;
-  }
-}
-
-button {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  padding: 10px;
-  background-color: #882c07;
-  text-transform: uppercase;
-  color: #ffffff;
-  border: none;
-  padding: 2% 4%;
-  width: 100%;
-}
-
-.buttonBlog {
-  background-color: #4c0341;
 }
 
 .contactHead {
@@ -758,4 +844,68 @@ main {
 
 .flexBlogItem textarea {
   background-color: #fae5ff;
+}
+
+.aboutHome {
+  padding-bottom: 4%;
+}
+
+.findMore {
+  padding: 3px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.findMore:hover {
+  background-color: #4c0341;
+  color: white;
+}
+
+button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 10px;
+  background-color: #882c07;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  padding: 2% 4%;
+  width: 100%;
+}
+
+.buttonBlog {
+  background-color: #4c0341;
+}
+
+.burgerNav {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .burgerNav {
+    display: inline-block;
+  }
+}
+
+header {
+  background-image: url(../shoeKloset/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h2 {
+  text-align: center;
+  background-color: #fae5ff;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 560px) {
+  .contactHead {
+    height: auto;
+  }
+  .contactHead h2 {
+    margin: 0 auto;
+  }
 }

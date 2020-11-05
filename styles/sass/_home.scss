@@ -1,0 +1,142 @@
+@import 'palette';
+
+.container{
+    position:relative;
+}
+
+.homeBackground{
+    background-image: url(../shoeKloset/headerImage.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    color:$purple;
+    width:40%;
+}
+
+.shoeBox{
+    position: absolute;
+    width:40%;
+    top:80%;
+    right: -6%;
+}
+
+// AboutHome
+.aboutHome{
+    margin:20px auto;
+}
+.aboutHome h4{
+    text-transform: uppercase;
+    color:$purple;
+    padding:0;
+    margin:13% 0 0;
+}
+
+.aboutHome p{
+    padding:10px;
+    text-align: center;
+}
+
+
+//blog home 
+.homeFlexContainer{
+    background-color: $white;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.homeFlexContainer img{
+    width:50%;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.tennieShoe{
+    display: flex;
+    width:100%;
+    height: auto;
+    flex-direction: row;
+}
+
+.tennieShoe img{
+    box-shadow: 16px 20px 0px 0px $orange;
+}
+
+.tennieShoe ul{
+    padding: 0 5% 0 20%;
+    list-style: none;
+    justify-content: flex-start;
+}
+
+.tennieShoe ul li h6{
+    margin-bottom: 0;
+}
+
+.tennieShoe ul li a{
+    color: $brown;
+    padding:10px;
+}
+
+.tennieShoe a:hover{
+    background-color: $brown;
+    color:white;
+    padding: 10px;
+}
+
+.beigeHome{
+    display: flex;
+    width:100%;
+    height: auto;
+    flex-direction: row;
+}
+
+.beigeHome img{
+    box-shadow: -24px 20px 0px 0px $orange;
+}
+
+.beigeHome ul{
+    list-style: none;
+    padding: 0 20% 0 5%;
+    justify-content: flex-end;
+}
+
+.beigeHome ul li h6{
+    margin-bottom: 0;
+}
+
+.beigeHome ul li a{
+    color: $brown;
+    padding:10px;
+}
+
+.beigeHome a:hover{
+    background-color: $brown;
+    color:white;
+    padding: 10px;
+}
+
+// contact Home
+
+.contactHome{
+    display:flex;
+}
+
+.contactHome h3{
+    text-transform: uppercase;
+}
+
+// media
+
+@media screen and (max-width:560px){
+    .contactHead {
+        height:auto;
+    }
+
+    .contactHead h2{
+        margin:0 auto;
+    }
+
+}

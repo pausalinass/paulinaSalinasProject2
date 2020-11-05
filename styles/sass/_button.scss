@@ -1,5 +1,28 @@
 @import 'palette';
 
+//home
+
+.aboutHome{
+    padding-bottom:4%;
+}
+
+.findMore {
+    padding:3px;
+    display: inline-block;
+    width:100%;
+    text-align: center;
+
+}
+
+.findMore:hover{
+    background-color: $purple;
+    color:white;
+}
+
+.findMoreOut{
+
+}
+
 // contact
 button{
     appearance: none;
