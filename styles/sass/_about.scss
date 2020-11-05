@@ -1,12 +1,15 @@
 @import 'palette';
 
-.aboutHome{
-    background-color: $mauve;
+header{
+    background-image: url(../shoeKloset/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h2{
     text-align:center;
-    background-color: $white;
+    background-color: $mauve;
+    margin-bottom: 0;
 }
 
 @media screen and (max-width:560px){

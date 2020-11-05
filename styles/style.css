@@ -422,13 +422,16 @@ nav ul li a:hover {
   }
 }
 
-.aboutHome {
-  background-color: #fae5ff;
+header {
+  background-image: url(../shoeKloset/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h2 {
   text-align: center;
-  background-color: #ffffff;
+  background-color: #fae5ff;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 560px) {
