@@ -440,6 +440,23 @@ h2 {
   }
 }
 
+button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 10px;
+  background-color: #882c07;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  padding: 2% 4%;
+  width: 100%;
+}
+
+.buttonBlog {
+  background-color: #4c0341;
+}
+
 .contactHead {
   background-image: url(../shoeKloset/contactImage.jpg);
   width: 100%;
@@ -462,6 +479,12 @@ main {
   position: relative;
   -webkit-box-shadow: 10px 30px #fe6f19;
           box-shadow: 10px 30px #fe6f19;
+}
+
+.flexFormContainer {
+  position: absolute;
+  bottom: 50px;
+  left: 640px;
 }
 
 .flexContainer {
@@ -506,19 +529,6 @@ textarea {
   width: 100%;
   height: 200px;
   resize: none;
-}
-
-button {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  padding: 10px;
-  background-color: #882c07;
-  text-transform: uppercase;
-  color: #ffffff;
-  border: none;
-  padding: 2% 4%;
-  width: 100%;
 }
 
 .socialInfo {
@@ -583,10 +593,16 @@ author, time {
   font-weight: bold;
 }
 
+.blogSection span {
+  font-weight: bold;
+}
+
 .blogHeader {
   background-image: url(..//shoeKloset/blogHeader.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
 }
 
 .blogHeader.wrapper {
@@ -600,73 +616,143 @@ author, time {
   text-transform: uppercase;
 }
 
-.boxHeader {
-  width: 60%;
-  position: absolute;
-  background-color: white;
-  right: -10px;
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0;
 }
 
-.boxHeaderText {
+.sideBarWrapper {
+  width: 40%;
+}
+
+.sideBarWeather {
+  padding: 50px;
+  height: 400px;
+  display: inline-block;
+}
+
+.sideBarGroup {
   background-color: #ffffff;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 60px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.boxHeaderText img {
-  -webkit-box-shadow: -26px 20px 0 0 #fe6f19;
-          box-shadow: -26px 20px 0 0 #fe6f19;
-}
-
-/* Side Bar 
-.sideBar{
-    float:left;
-    width:40%;
-    position:relative;
-}
-
-.sideBarWeather{
-background-color: $white;
-width: 70%;
-margin: 50px auto;
-padding: 10px 40px;
-}
-
-.sideBarWeather h6{
-    margin:30px 0 10px;
-    color: $purple;
-}
-
-.sideBarWeather p{
-    padding:0 0 20px;
-}
-
-.sideBarWeather ul{
-    padding-left: 16px;
-}
-
-.sideBarWeather ul li{
-    letter-spacing: 1.3px;
-    line-height: 1.5;
-}
-/* 
-.sideBarImg{
-    position: absolute;
-    top:30px;
-    left: 10px;
-}
-*/
-/* Blog Post */
-.blogPost {
-  float: left;
-  width: 60%;
-  position: relative;
-  background-color: #ffffff;
-  padding: 22% 3% 5%;
-}
-
-.blogPost h5 {
-  text-transform: uppercase;
-  margin-bottom: 5px;
+.sideBarGroup h6 {
+  margin: 20px 0;
   color: #4c0341;
 }
 
-/* Comments */
+.sideBarGroup ul {
+  padding-left: 15px;
+}
+
+.sideBarGroup ul li {
+  padding-left: 10px;
+}
+
+.blogSection {
+  width: 60%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.blogSection p {
+  width: 90%;
+}
+
+.blogHeadeWrapprer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.boxHeaderPost {
+  background-color: #ffffff;
+}
+
+.blogPostContent {
+  position: relative;
+}
+
+.blogPostImg {
+  display: absolute;
+  top: 50px;
+  width: 100%;
+  -webkit-box-shadow: -26px 18px 0px 3px #fe6f19;
+          box-shadow: -26px 18px 0px 3px #fe6f19;
+}
+
+.boxHeaderContentText {
+  position: relative;
+  background-color: white;
+  padding: 5%;
+}
+
+.boxHeaderContentText h5 {
+  text-transform: uppercase;
+  color: #4c0341;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.commentsText h4 {
+  text-align: left;
+  text-transform: uppercase;
+  color: #4c0341;
+  margin-bottom: 10px;
+}
+
+.commentsFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.commentsText {
+  margin: 20px;
+}
+
+.commentsText p {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.userImage {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blogForm {
+  padding: 40px;
+}
+
+.flexBlogItem input {
+  background-color: #fae5ff;
+}
+
+.flexBlogItem textarea {
+  background-color: #fae5ff;
+}

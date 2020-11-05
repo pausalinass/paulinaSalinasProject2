@@ -7,12 +7,18 @@ main{
 author, time{
     font-weight: bold;
 }
+
+.blogSection span{
+    font-weight: bold;
+}
 // Blog Header
 
 .blogHeader {
     background-image: url(..//shoeKloset/blogHeader.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    width:100%;
+    height:80vh;
 }
 
 .blogHeader.wrapper{
@@ -26,75 +32,139 @@ author, time{
     text-transform: uppercase;
 }
 
-.boxHeader{
-    width: 60%;
-    position:absolute;
-    background-color: white;
-    right:-10px;
-}
+// section
 
-.boxHeaderText{
-    background-color:$white;
-}
-
-.boxHeaderText img{
-        box-shadow: -26px 20px 0 0 $orange;
+main{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    padding:0;
 }
 
 
-/* Side Bar 
-.sideBar{
-    float:left;
-    width:40%;
-    position:relative;
+// side bar
+.sideBarWrapper{
+width:40%;
 }
 
 .sideBarWeather{
-background-color: $white;
-width: 70%;
-margin: 50px auto;
-padding: 10px 40px;
+    padding:50px;
+    height:400px;
+    display:inline-block;
 }
 
-.sideBarWeather h6{
-    margin:30px 0 10px;
-    color: $purple;
-}
-
-.sideBarWeather p{
-    padding:0 0 20px;
-}
-
-.sideBarWeather ul{
-    padding-left: 16px;
-}
-
-.sideBarWeather ul li{
-    letter-spacing: 1.3px;
-    line-height: 1.5;
-}
-/* 
-.sideBarImg{
-    position: absolute;
-    top:30px;
-    left: 10px;
-}
-*/
-
-/* Blog Post */
-.blogPost{
-    float:left;
-    width: 60%;
-    position:relative;
+.sideBarGroup{
     background-color: $white;
-    padding: 22% 3% 5%;
+    padding-left:20px;
+    padding-bottom:20px;
+    padding-right:60px;
+    width:100%;
+    justify-content: center;
 }
 
-.blogPost h5{
-    text-transform: uppercase;
-    margin-bottom: 5px;
+
+// come back to the img 
+
+.sideBarGroup h6{
+    margin: 20px 0;
     color:$purple;
 }
 
-/* Comments */
+.sideBarGroup ul{
+padding-left:15px;
+}
 
+.sideBarGroup ul li{
+    padding-left:10px;
+}
+
+//blogSection
+
+.blogSection{
+width:60%;
+height:auto;
+display:flex;
+flex-wrap:wrap;
+}
+
+.blogSection p{
+    width:90%;
+}
+
+// BoxHeader
+
+
+// Header Img  come back to this fix position and background color 
+.blogHeadeWrapprer{
+display:flex;
+}
+.boxHeaderPost{
+    background-color: $white;
+}
+.blogPostContent{
+    position:relative;
+}
+.blogPostImg{
+    display:absolute;
+    top:50px;
+    width:100%;
+    box-shadow: -26px 18px 0px 3px $orange;
+}
+
+// BoxHeader text
+.boxHeaderContentText{
+    position:relative;
+    background-color: white;
+    padding:5%;
+}
+
+.boxHeaderContentText h5{
+    text-transform: uppercase;
+    color:$purple;
+    margin-top:10px;
+    margin-bottom: 0;
+}
+
+//Comments
+
+.commentsText h4{
+    text-align: left;
+    text-transform: uppercase;
+    color:$purple;
+    margin-bottom: 10px;
+}
+
+.commentsFlex{
+    display:flex;
+    flex-direction: row;
+}
+
+.commentsText{
+        margin:20px;
+}
+
+.commentsText p{
+    flex-wrap: wrap;
+}
+
+.userImage{
+    width:100px;
+    height:100px;
+    object-fit: cover;
+}
+
+//Form 
+.blogForm{
+    padding:40px;
+}
+.flexBlogItem input{
+    background-color:$mauve;
+}
+
+.flexBlogItem textarea{
+    background-color: $mauve;
+}
+
+
+
+// Footer 

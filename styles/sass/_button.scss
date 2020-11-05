@@ -1,0 +1,21 @@
+@import 'palette';
+
+// contact
+button{
+    appearance: none;
+    padding: 10px;
+    background-color: $brown;
+    text-transform: uppercase;
+    color:$white;
+    border: none;
+    padding: 2% 4%;
+    width:100%;
+}
+
+//blog 
+
+.buttonBlog{
+    background-color: $purple;
+}
+
+
