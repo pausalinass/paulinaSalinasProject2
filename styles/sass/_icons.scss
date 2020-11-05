@@ -1,0 +1,23 @@
+@import 'palette';
+
+.contactFlexItem span{
+    position: relative;
+    top: 50%;
+    left: -10%;
+}
+
+.contactFlexItem span i{
+    background-color: $purple;
+    color: $white;
+    font-size: 30px;
+    border-radius: 50px;
+    padding: 10px;
+    float:right;
+}
+
+@media (max-width: 950px) {
+    .contactFlexItem span{
+        left:0;
+        height: 0;
+    }
+}

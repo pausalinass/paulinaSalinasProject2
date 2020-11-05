@@ -426,7 +426,7 @@ h1 {
 
 .beigeHome ul {
   list-style: none;
-  padding: 0 20% 0 5%;
+  padding: 0 20% 4% 5%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -819,7 +819,7 @@ main {
 }
 
 .commentsText {
-  margin: 20px;
+  margin: 5%;
 }
 
 .commentsText p {
@@ -844,6 +844,12 @@ main {
 
 .flexBlogItem textarea {
   background-color: #fae5ff;
+}
+
+@media screen and (max-width: 870px) {
+  .sideBarWeather {
+    display: none;
+  }
 }
 
 .aboutHome {
@@ -907,5 +913,102 @@ h2 {
   }
   .contactHead h2 {
     margin: 0 auto;
+  }
+}
+
+.pathwayWrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contactHome {
+  padding: 4%;
+}
+
+.contactInfoFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contactFlexContainerItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contactFlexItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40vw;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contactText {
+  margin-left: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  padding: 3%;
+}
+
+.contactText h3 {
+  margin-bottom: 0;
+}
+
+.contactText p {
+  margin: 0;
+  padding: 10px;
+  width: 80%;
+}
+
+@media (max-width: 950px) {
+  .contactFlexContainerItem {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactFlexItem {
+    width: 100%;
+  }
+}
+
+.contactFlexItem span {
+  position: relative;
+  top: 50%;
+  left: -10%;
+}
+
+.contactFlexItem span i {
+  background-color: #4c0341;
+  color: #ffffff;
+  font-size: 30px;
+  border-radius: 50px;
+  padding: 10px;
+  float: right;
+}
+
+@media (max-width: 950px) {
+  .contactFlexItem span {
+    left: 0;
+    height: 0;
   }
 }

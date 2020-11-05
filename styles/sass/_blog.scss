@@ -95,6 +95,8 @@ flex-wrap:wrap;
 
 
 // Header Img  come back to this fix position and background color 
+
+
 .blogHeadeWrapprer{
 display:flex;
 }
@@ -116,6 +118,7 @@ display:flex;
     position:relative;
     background-color: white;
     padding:5%;
+
 }
 
 .boxHeaderContentText h5{
@@ -134,13 +137,14 @@ display:flex;
     margin-bottom: 10px;
 }
 
+
 .commentsFlex{
     display:flex;
     flex-direction: row;
 }
 
 .commentsText{
-        margin:20px;
+        margin:5%;
 }
 
 .commentsText p{
@@ -167,4 +171,10 @@ display:flex;
 
 
 
-// Footer 
+// Media Querie
+@media screen and (max-width:870px){
+
+    .sideBarWeather{
+        display:none;
+    }
+}

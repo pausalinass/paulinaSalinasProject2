@@ -1,0 +1,61 @@
+@import 'palette';
+
+
+.pathwayWrapper{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contactHome{
+    padding:4%;
+}
+
+.contactInfoFlex{
+    display:flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+}
+
+.contactFlexContainerItem{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.contactFlexItem{
+    display:flex;
+    width:40vw;
+    flex-wrap: wrap;
+}
+
+.contactText{
+    margin-left:10px;
+    flex-direction: column;
+    text-align: left;
+    padding:3%;
+}
+
+.contactText h3{
+    margin-bottom:0;
+}
+
+.contactText p{
+    margin:0;
+    padding:10px;
+    width:80%;
+}
+
+
+
+@media (max-width: 950px) {
+
+.contactFlexContainerItem {
+    flex-direction: column;
+}
+
+.contactFlexItem {
+    width: 100%;
+}
+}
+
